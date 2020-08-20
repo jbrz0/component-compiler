@@ -2,7 +2,7 @@ const banner = (bannerText) => {
 
   if (bannerText === null || bannerText === undefined) bannerText = ''
 
-  return `<div style="background: blue">
+  return `<div class="banner">
   ${bannerText}
 </div>`
 }

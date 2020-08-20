@@ -14,10 +14,6 @@ const readInterface = readline.createInterface({
   console: false
 })
 
-// Get title from only the first bit
-let title = 'Title'
-let text = ''
-
 const iterate = new Promise((resolve, reject) => {
   readInterface.on('line', function(line) {
 
@@ -30,6 +26,11 @@ const iterate = new Promise((resolve, reject) => {
     if (line.slice(0, 6) === "banner") {
       const param = line.split('=')[1].trim()
       params.bannerText = param
+      // completed = true
+    }
+    if (line.slice(0, 3) === "nav") {
+      const param = line.split('=')[1].trim()
+      params.navText = param.split(',').map(item => item.trim())
       completed = true
     }
 
