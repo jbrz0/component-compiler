@@ -1,0 +1,167 @@
+:root {
+  --blue: #3740FF;
+  --teal: #00E5FF;
+  --black: #080940;
+  --red: #FF014E;
+  --white: #FFFFFF;
+  --gray: #EFF0FE;
+}
+
+.wrap {
+  /* v1 demo desktop only */
+  min-width: 1200px;
+  padding: 0 3rem;
+}
+
+body {
+  margin: 0;
+}
+h5, h6, p, * {
+  font-family: 'Poppins', sans-serif;
+}
+h1, h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+}
+h3, h4 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+.banner {
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+
+  /* v1 desktop only resolution */
+  min-width: 1200px;
+  padding: 0 3rem;
+}
+.banner span {
+  display: inline-block;
+  position: relative;
+  top: -1.25rem;
+  margin: 0 2rem;
+}
+.banner img {
+  max-width: 250px;
+  padding: 0.5rem 0;
+}
+@media (max-width: 1400px) {
+  .banner img {
+    display: none;
+  }
+  .banner span {
+    position: static;
+    padding: 1rem;
+  }
+}
+.nav {
+  max-width: 1200px;
+  margin: 2rem auto;
+  position: relative;
+}
+.nav .logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav .text-wrap {
+  text-align: right;
+  padding: 1.25rem 0;
+}
+.nav .text-wrap a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 0.9rem;
+  margin: 0 0.75rem;
+}
+.nav .text-wrap .highlight {
+  background: var(--blue);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: var(--white);
+}
+.nav .text-wrap .highlight:hover {
+  opacity: 0.8;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero {
+  padding: 6rem 0;
+}
+.hero-text {
+  float: left;
+  width: 50%;
+}
+.hero-text h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  max-width: 460px;
+  color: var(--black);
+}
+.hero-text button {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 1rem 1.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+}
+.hero-text button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.hero-graphic {
+  margin-right: 0;
+  display: block;
+  margin-left: auto;
+}
+.info {
+  overflow: auto;
+  padding: 4rem 0 8rem;
+}
+.info-img {
+  float: left;
+  width: 50%;
+}
+.info-graphic {
+  display: block;
+}
+.info-text {
+  float: left;
+  width: 50%;
+}
+.info-text h2 {
+  color: var(--black);
+  font-size: 2.25rem;
+  max-width: 380px;
+  margin-top: 8rem;
+}
+.info-text h4 {
+  color: var(--red);
+  font-size: 1.5rem;
+}
+.footer {
+  overflow: auto;
+  background-color: var(--gray);
+
+  /* v1 desktop only resolution */
+  min-width: 1200px;
+  padding: 0 3rem;
+}
+.footer .logo-footer {
+  float: left;
+  padding: 3rem 0;
+}
+.footer .email {
+  float: right;
+  font-size: 0.9rem;
+  color: var(--black);
+  padding-top: 3.9rem;
+}
+.footer .email a {
+  color: var(--blue);
+  text-decoration: none;
+}

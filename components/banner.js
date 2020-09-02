@@ -3,7 +3,9 @@ const banner = (bannerText) => {
   if (bannerText === null || bannerText === undefined) bannerText = ''
 
   return `<div class="banner">
-  ${bannerText}
+  <img src="banner.svg" alt="banner" />
+  <span>${bannerText}</span>
+  <img src="banner.svg" alt="banner" />
 </div>`
 }
 
