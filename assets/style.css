@@ -15,6 +15,7 @@
 
 body {
   margin: 0;
+  background: var(--white);
 }
 h5, h6, p, * {
   font-family: 'Poppins', sans-serif;
