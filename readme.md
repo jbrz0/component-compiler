@@ -2,11 +2,9 @@
 
 A NodeJS Based web component maker that takes a simple input script and outputs full HTML documents
 
-### [Article](https://oddscenes.com/blog/component-compiler)
-
 &nbsp;&nbsp;
 
-<img src="https://oddscenes.s3.amazonaws.com/covers/component-compiler.png" width="500" />
+<img src="/assets/component-compiler.png" width="500" />
 
 &nbsp;&nbsp;
 
@@ -40,3 +38,21 @@ A NodeJS Based web component maker that takes a simple input script and outputs 
 5. **info** = `Info Headline`, `Info Subheadline`
 6. **description** = `Info Text`
 7. **footer** = `Contact Email`
+
+## Sample input script
+
+Location: `/build/index.odd`
+
+```odd
+title = Folo Robots
+
+banner = 7 JANUARY 2020: 25% OFF On All Likes & Followers For A Limited Time!
+nav = Home, About, Services, Contact Us, (Free Trial)
+
+hero = Meet Real Robot Friends, (Get Started)
+
+info = Find high quality robot friends from us, A new update coming soon!
+description = Backfold manganoisation glossocyte cheirest viceard palladiophil pantacade megistic tetristic. Aurplasm centlepry adrenomancy gigamire icosaode thiodromous synsepalous.
+
+footer = justin@oddscenes.com
+```
